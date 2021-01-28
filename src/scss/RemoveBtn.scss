@@ -1,0 +1,26 @@
+.remove-btn {
+    position: absolute;
+    right: -16px;
+    top: 0;
+    height: 15px;
+    transform: translateY(50%);
+
+    &:hover {
+        cursor: pointer;
+    }
+
+    &:after,
+    &:before {
+        content: '';
+        position: absolute;
+        background: #E5261E;
+        height: 2px;
+        width: 20px;
+        border-radius: 1px;
+        transform:  rotate(45deg);
+    }
+
+    &:before {
+        transform: rotate(-45deg);
+    }
+}

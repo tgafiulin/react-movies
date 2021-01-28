@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap');
+
+body {
+    margin: 0;
+    font-family: 'Rubik', sans-serif;
+    color: #333333;
+}
+
+h2 {
+    font-size: 24px;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+
+.container {
+    max-width: 1200px;
+    width: 100%;
+    padding: 0 10px;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+.main {
+    margin-bottom: 70px;
+}
+
+.btn {
+    font-family: 'Rubik', sans-serif;
+    background: #E5261E;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #FFFFFF;
+    padding: 10px 30px;
+    border: none;
+    outline: none;
+}
+
+.btn--close {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    color: #E5261E;
+    background: transparent;
+    padding: 0;
+}
+
+.btn:hover {
+    background: #CC221B;
+    cursor: pointer;
+}
+
+.btn--close:hover {
+    background: transparent;
+}
+
+.swiper-wrapper {
+    display: flex;
+}
+
+.swiper-slide {
+    max-width: 280px;
+    width: 100%!important;
+    margin-right: 20px;
+}
+
+.swiper-slide:last-child {
+    margin-right: 0;
+}
+
+.input {
+    width: 320px;
+    margin-right: 30px;
+    border: none;
+    outline: 0;
+    border-bottom: 1px solid #333333;
+    font-size: 16px;
+}
+
+.input--login {
+    width: 100px;
+}
+
+.input:active {
+    font-weight: 500;
+}

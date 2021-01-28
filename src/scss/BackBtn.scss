@@ -1,0 +1,30 @@
+.back-btn {
+    
+    
+    &:hover {
+        cursor: pointer;
+    }
+
+    &:after,
+    &:before {
+        content: '';
+        position: absolute;
+        background: #E5261E;
+        height: 2px;
+        width: 20px;
+        border-radius: 1px;
+        transform: translateY(21px) rotate(45deg);
+    }
+
+    &:before {
+        transform: translateY(7px) rotate(-45deg);
+    }
+
+    a {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+    }
+}

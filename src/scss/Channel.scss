@@ -1,0 +1,30 @@
+.channels {
+    padding-right: 18px;
+}
+
+.channel {
+    border-radius: 8px;
+    background-color: #F2F2F2;
+    display: flex;
+    justify-items: center;
+    margin-bottom: 15px;
+    padding: 18px 140px;
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+}
+
+.channel__logo {
+    margin-right: 140px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 115px;
+}
+
+.channel__name {
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 15px;
+}

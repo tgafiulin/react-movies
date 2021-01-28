@@ -1,0 +1,20 @@
+.tabs {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.tab {
+    font-size: 20px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.tab--active {
+    color: #E5261E;
+    border-bottom: 2px solid #E5261E;
+}
+
+.tab-movies {
+    margin-right: 25px;
+}
