@@ -1,17 +1,15 @@
 import React from 'react'
 import AuthForm from './AuthForm';
-import { useSelector } from 'react-redux'
+import { useSelector, useDispatch } from 'react-redux'
+import { closeModal } from '../../app/modalReducer'
 
 function Modal() {
-    let className = 'modal-container';
     const openModal = useSelector(state => state.modal.openModal)
-    if(openModal) {
-        className += ' modal-container--open';
-    }
+    const dispatch = useDispatch();
 
     return (
-        <div className={className}>
-            <div className="close"></div>
+        <div className={openModal ? 'modal-container modal-container--open' : 'modal-container'}>
+            <div className="modal-container__close" onClick={() => dispatch(closeModal())}></div>
             <div className="modal">
                 <AuthForm />
             </div>
