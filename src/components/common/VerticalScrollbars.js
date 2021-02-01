@@ -1,15 +1,9 @@
-import React, { Component } from 'react';
+import React from 'react';
 import { Scrollbars } from 'react-custom-scrollbars';
 
-export default class VerticalScrollbars extends Component {
+function VerticalScrollbars (props, ...rest) {
 
-    constructor(props, ...rest) {
-        super(props, ...rest);
-        this.renderThumb = this.renderThumb.bind(this);
-        this.renderTrackVertical = this.renderTrackVertical.bind(this);
-    }
-
-    renderThumb({ style, ...props }) {
+    const renderThumb = ({ style, ...props }) => {
         const thumbStyle = {
             backgroundColor: `#BDBDBD`,
             borderRadius: 2
@@ -21,7 +15,7 @@ export default class VerticalScrollbars extends Component {
         );
     }
 
-    renderTrackVertical({ style, ...props }) {
+    const renderTrackVertical = ({ style, ...props }) => {
         const trackStyle = {
             backgroundColor: `#F2F2F2`,
             color: 'yellow',
@@ -36,12 +30,12 @@ export default class VerticalScrollbars extends Component {
         );
     }
 
-    render() {
-        return (
-            <Scrollbars
-                renderThumb={this.renderThumb}
-                renderTrackVertical={this.renderTrackVertical}
-                {...this.props}/>
-        );
-    }
+    return (
+        <Scrollbars
+            renderThumb={renderThumb}
+            renderTrackVertical={renderTrackVertical}
+            {...props}/>
+    );
 }
+
+export default VerticalScrollbars;

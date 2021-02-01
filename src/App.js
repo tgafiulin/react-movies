@@ -1,5 +1,5 @@
 import './Styles.scss';
-import React, { Component } from 'react';
+import React from 'react';
 import Header from './components/common/Header'
 import Footer from './components/common/Footer'
 import Modal from './components/common/Modal'
@@ -12,31 +12,29 @@ import {
   Redirect
 } from "react-router-dom";
 
-class App extends Component {
-  render () {
-    return (
-      <div className="App">
-        <Router>
-          <Header />
-          <div className="main">
-                <div className="container">
-                  <Switch>
-                    <Route exact path="/">
-                      <Tabs />
-                    </Route>
-                    <Route path="/movie/:id">
-                      <MovieItem />
-                    </Route>
-                    <Redirect to="/" />
-                  </Switch>
-                </div>
-            </div>
-          <Footer />
-          <Modal />
-        </Router>
-      </div>
-    );
-  }
+function App () {
+  return (
+    <div className="App">
+      <Router>
+        <Header />
+        <div className="main">
+              <div className="container">
+                <Switch>
+                  <Route exact path="/">
+                    <Tabs />
+                  </Route>
+                  <Route path="/movie/:id">
+                    <MovieItem />
+                  </Route>
+                  <Redirect to="/" />
+                </Switch>
+              </div>
+          </div>
+        <Footer />
+        <Modal />
+      </Router>
+    </div>
+  );
 }
 
 export default App;
