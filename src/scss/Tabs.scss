@@ -5,13 +5,15 @@
 }
 
 .tab {
-    font-size: 20px;
+    font-size: 28px;
+    line-height: 33px;
     font-weight: 500;
     cursor: pointer;
 }
 
 .tab--active {
     color: #E5261E;
+    padding-bottom: 9px;
     border-bottom: 2px solid #E5261E;
 }
 
