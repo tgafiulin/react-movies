@@ -19,20 +19,16 @@ function MovieList () {
     }
 
     const params = {
-        slidesPerView: 4,
-        spaceBetween: 20,   
         breakpoints: {
             320: {
-              slidesPerView: 2,
-              spaceBetween: 10,
+                slidesPerView: 2,
+                spaceBetween: 10,
+                observer: true,
             },
             768: {
-              slidesPerView: 4,
-              spaceBetween: 20,
-            },
-            1024: {
-              slidesPerView: 4,
-              spaceBetween: 20,
+                slidesPerView: 4,
+                spaceBetween: 20,
+                observer: true,
             }
         }
     };
