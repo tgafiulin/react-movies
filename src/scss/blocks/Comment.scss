@@ -1,6 +1,14 @@
 .comments {
     margin-left: 190px;
 
+    @media (max-width: $bpTablet) {
+        margin-left: 50px;
+    }
+
+    @media (max-width: $bpMobile) {
+        margin-left: 0;
+    }
+
     &__title {
         margin-bottom: 25px;
     }
@@ -10,6 +18,11 @@
         align-items: flex-start;
         position: relative;
         margin-bottom: 16px;
+
+        @media (max-width: $bpMobile) {
+            flex-direction: column;
+            padding-bottom: 50px;
+        }
     }
 
     &__input {
@@ -27,6 +40,14 @@
         width: 100%;
         box-sizing: border-box;
         overflow: auto;
+
+        @media (max-width: $bpTablet) {
+            max-width: 500px;
+        }
+
+        @media (max-width: $bpMobile) {
+            margin-bottom: 15px;
+        }
     }
 
     &__label {
@@ -35,6 +56,20 @@
         right: 0;
         max-width: calc(100% - 800px);
         color: rgba(0, 0, 0, .5);
+
+        @media (max-width: $bpTablet) {
+            right: auto;
+            left: 520px;
+            bottom: auto;
+            top: 50px;
+            max-width: none;
+        }
+
+        @media (max-width: $bpMobile) {
+            left: 0;
+            top: auto;
+            bottom: 0;
+        }
     }
 }
 
@@ -51,6 +86,14 @@
     color: #333333;
     margin-bottom: 16px;
     position: relative;
+
+    @media (max-width: $bpTablet) {
+        max-width: 500px;
+    }
+
+    @media (max-width: $bpMobile) { 
+        max-width: calc(100% - 40px);
+    }
 
     &__login {
         font-weight: 500;

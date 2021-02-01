@@ -8,15 +8,28 @@
     font-size: 28px;
     line-height: 33px;
     font-weight: 500;
+    padding-bottom: 9px;
     cursor: pointer;
+
+    @media (max-width: $bpTablet) {
+        font-size: 24px;
+        padding-bottom: 0;
+    }
+
+    @media (max-width: $bpMobile) {
+        font-size: 20px;
+    }
 
     &:first-child {
         margin-right: 25px;
+
+        @media (max-width: $bpTablet) {
+            margin-right: 15px;
+        }
     }
 
     &--active {
         color: #E5261E;
-        padding-bottom: 9px;
         border-bottom: 2px solid #E5261E;
     }
 }

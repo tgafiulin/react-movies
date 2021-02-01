@@ -1,0 +1,40 @@
+.btn {
+    font-family: 'Rubik', sans-serif;
+    background: #E5261E;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #FFFFFF;
+    padding: 10px 30px;
+    border: none;
+    outline: none;
+
+    @media (max-width: $bpMobile) {
+        font-size: 14px;
+        padding: 10px 15px;
+    }
+
+    &:hover {
+        background: #CC221B;
+        cursor: pointer;
+    }
+
+    &--close {
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 1.33;
+        text-align: center;
+        color: #E5261E;
+        background: transparent;
+        padding: 0;
+
+        @media (max-width: $bpMobile) {
+            font-size: 14px;
+        }
+
+        &:hover {
+            background: transparent;
+        }
+    }
+}

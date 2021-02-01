@@ -1,7 +1,10 @@
 .search {
     display: flex;
-    margin-top: 10px;
     height: 25px;
+
+    @media (max-width: $bpMobile) {
+        height: auto;
+    }
 
     &__btn {
         font-family: 'Rubik', sans-serif;
@@ -10,5 +13,10 @@
         font-size: 16px;
         border: none;
         background: transparent;
+
+        @media (max-width: $bpMobile) {
+            font-size: 14px;
+            display: none;
+        }
     }
 }

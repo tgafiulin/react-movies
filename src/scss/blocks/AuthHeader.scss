@@ -8,5 +8,10 @@
         line-height: 19px;
         color: #333333;
         margin-right: 15px;
+
+        @media (max-width: $bpMobile) {
+            font-size: 14px;
+            margin-right: 10px
+        }
     }
 }

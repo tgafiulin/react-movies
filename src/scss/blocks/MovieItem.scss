@@ -9,6 +9,15 @@
     width: 100%;
     margin-left: 110px;
 
+    @media (max-width: $bpTablet) {
+        margin-left: 50px;
+    }
+
+    @media (max-width: $bpMobile) {
+        flex-direction: column;
+        margin-left: 0;
+    }
+
     &__img {
         border-radius: 8px;
         max-width: 280px;
@@ -17,6 +26,17 @@
         margin-right: 120px;
         position: relative;
         overflow: hidden;
+
+        @media (max-width: $bpTablet) {
+            margin-right: 60px;
+        }
+
+        @media (max-width: $bpMobile) {
+            margin-right: 0;
+            margin-bottom: 20px;
+            margin-left: 30px;
+            max-width: 260px;
+        }
     
         img {
             position: absolute;

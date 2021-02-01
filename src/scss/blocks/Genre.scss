@@ -1,5 +1,10 @@
 .genres {
     display: flex;
+
+    @media (max-width: $bpMobile) {
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
 }
 
 .genre {
@@ -14,6 +19,20 @@
     flex-direction: column;
     opacity: .8;
     cursor: pointer;
+
+    @media (max-width: $bpTablet) {
+        max-width: 170px;
+        height: 150px;
+    }
+
+    @media (max-width: $bpMobile) {
+        margin-right: 0;
+        margin-bottom: 10px;
+        max-width: calc(50vw - 15px);
+        width: calc(50vw - 15px);
+        height: calc(50vw - 15px);
+        max-height: 200px;
+    }
 
     &:hover {
         opacity: 1;
@@ -44,6 +63,10 @@
         line-height: 57px;
         display: block;
         margin: 80px auto 30px;
+
+        @media (max-width: $bpTablet) {
+            margin: 30px auto 10px;
+        }
     }
 
     &__name {

@@ -32,7 +32,7 @@ function VerticalScrollbars (props, ...rest) {
 
     return (
         <Scrollbars
-            renderThumb={renderThumb}
+            renderThumbVertical={renderThumb}
             renderTrackVertical={renderTrackVertical}
             {...props}/>
     );

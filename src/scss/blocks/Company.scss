@@ -1,11 +1,15 @@
 .company {
+    font-size: 16px;
+
+    @media (max-width: $bpMobile) {
+        font-size: 14px;
+    }
+
     &__address {
-        font-size: 16px;
         margin-bottom: 5px;
     }
 
     &__phones {
-        font-size: 16px;
         margin-bottom: 10px;
     }
 

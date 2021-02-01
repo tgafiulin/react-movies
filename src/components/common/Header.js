@@ -10,7 +10,9 @@ function Header() {
                 <div className="header__info">
                     <Link to="/">
                         <div className="logo">
-                            <img src='/images/sign.svg' alt="Logo" className="logo__img" />
+                            <div className="logo__img" >
+                                <img src='/images/sign.svg' alt="Logo" />
+                            </div>
                             <div className="logo__name">Видеосервис</div>
                         </div>
                     </Link>

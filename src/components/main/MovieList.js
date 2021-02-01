@@ -2,6 +2,7 @@ import React from 'react'
 import Movie from './Movie'
 import { useSelector } from 'react-redux'
 import { Swiper, SwiperSlide } from 'swiper/react';
+import 'swiper/swiper.scss';
 import Loader from '../common/Loader'
 
 function MovieList () {
@@ -18,7 +19,22 @@ function MovieList () {
     }
 
     const params = {
-        slidesPerView: 4
+        slidesPerView: 4,
+        spaceBetween: 20,   
+        breakpoints: {
+            320: {
+              slidesPerView: 2,
+              spaceBetween: 10,
+            },
+            768: {
+              slidesPerView: 4,
+              spaceBetween: 20,
+            },
+            1024: {
+              slidesPerView: 4,
+              spaceBetween: 20,
+            }
+        }
     };
 
     if (!movies) {

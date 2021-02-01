@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { Fragment } from 'react'
 import CommentList from './CommentList'
 import { useSelector } from 'react-redux'
 import { useParams, Link } from "react-router-dom";
@@ -10,7 +10,7 @@ function MovieItem () {
     const movie = movies.filter((movie) => movieId === movie.id)[0];
 
     return (
-        <div>
+        <Fragment>
             <div className="movie-container">
                 <div className="back-btn">
                     <Link to="/"></Link>
@@ -31,7 +31,7 @@ function MovieItem () {
                 movie={movie}
                 comments={movie.comments}
             />
-        </div>
+        </Fragment>
     )
 }
 

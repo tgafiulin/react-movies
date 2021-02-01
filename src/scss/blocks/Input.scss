@@ -6,11 +6,25 @@
     border-bottom: 1px solid #333333;
     font-size: 16px;
 
+    @media (max-width: $bpTablet) {
+        width: 220px;
+    }
+
+    @media (max-width: $bpMobile) {
+        width: 35vw;
+        font-size: 12px;
+        margin-right: 10px;
+    }
+
     &:active {
         font-weight: 500;
     }
 
     &--login {
         width: 100px;
+
+        @media (max-width: $bpMobile) {
+            width: 60px;
+        }
     }
 }

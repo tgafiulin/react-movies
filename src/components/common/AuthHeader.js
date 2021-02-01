@@ -40,7 +40,7 @@ function AuthHeader () {
     if (!edit) {
         loginJsx = <div className="auth-header__login" onClick={handleEditLogin}>{login}</div>
     } else {
-        loginJsx = <Input value={loginText} onChange={(e) => editLoginText(e.target.value)} onBlur={handleBlur} className="input input--login" placeholder="Введите новый логин" />
+        loginJsx = <Input value={loginText} onChange={(e) => editLoginText(e.target.value)} onBlur={handleBlur} className="input--login" placeholder="Введите новый логин" />
     }
     return (
         <div className="auth-header">
