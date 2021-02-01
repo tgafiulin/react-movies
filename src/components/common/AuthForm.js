@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import { useDispatch } from 'react-redux'
 import { editLogin } from '../../app/loginReducer'
 import { closeModal } from '../../app/modalReducer'
+import Button from './Button'
 
 function AuthForm () {
     const dispatch = useDispatch();
@@ -53,8 +54,7 @@ function AuthForm () {
                         <span className="auth__checkmark"></span>
                         Запомнить
                 </label>
-                <input 
-                    className="btn" 
+                <Button  
                     type="submit" 
                     value="Войти" />
             </form>

@@ -2,6 +2,7 @@ import Comment from './Comment'
 import React, { useState } from 'react'
 import { updateComment } from '../../app/movieReducer'
 import { useSelector, useDispatch } from 'react-redux'
+import Button from '../common/Button'
 
 function CommentList (props) {
     const [textComment, editComment] = useState('')
@@ -48,7 +49,7 @@ function CommentList (props) {
             <div className="comments__header">
                 <label htmlFor="comment" className="comments__label">{label}</label>
                 <textarea id="comment" rows="5" onChange={(e) => editComment(e.target.value)} className="comments__input" value={textComment} />
-                <div className="btn" onClick={addComment}>Опубликовать</div>
+                <Button onClick={addComment} value="Опубликовать" />
             </div>
             {comments.map((comment) =>
                 <Comment 

@@ -3,6 +3,7 @@ import { useSelector, useDispatch } from 'react-redux'
 import { openModal } from '../../app/modalReducer'
 import { editLogin } from '../../app/loginReducer'
 import Input from './Input'
+import Button from './Button'
 
 function AuthHeader () {
     let login = useSelector(state => state.login.login)
@@ -44,7 +45,7 @@ function AuthHeader () {
     return (
         <div className="auth-header">
             { loginJsx }
-            { login.length ?  <button className="btn btn--close" onClick={handleLogout}>Выйти</button> : <button className="btn" onClick={handleLogin}>Войти</button> }
+            { login.length ?  <Button className="btn--close" onClick={handleLogout} value="Выйти" /> : <Button onClick={handleLogin} value="Войти" /> }
         </div>
     )
 }
