@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import { useDispatch } from 'react-redux'
 import { updateSearchValue } from '../../app/movieReducer'
+import Input from './Input'
 
 function Search () {
     const [searchValue, updateValue] = useState('')
@@ -18,13 +19,12 @@ function Search () {
 
     return (
         <div className="search">
-            <input 
-                className="input" 
+            <Input
                 onChange={(e) => updateValue(e.target.value)}
                 onKeyPress={onKeyPressHandler}
                 value={searchValue}
-                type="text" 
-                placeholder="Поиск..." />
+                placeholder="Поиск..."
+            />
             <button className="search__btn" onClick={handleCLick}>Найти</button>
         </div>
     )

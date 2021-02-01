@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react'
 import { useSelector, useDispatch } from 'react-redux'
 import { openModal } from '../../app/modalReducer'
 import { editLogin } from '../../app/loginReducer'
+import Input from './Input'
 
 function AuthHeader () {
     let login = useSelector(state => state.login.login)
@@ -38,7 +39,7 @@ function AuthHeader () {
     if (!edit) {
         loginJsx = <div className="auth-header__login" onClick={handleEditLogin}>{login}</div>
     } else {
-        loginJsx = <input value={loginText} onChange={(e) => editLoginText(e.target.value)} onBlur={handleBlur} className="input input--login" />
+        loginJsx = <Input value={loginText} onChange={(e) => editLoginText(e.target.value)} onBlur={handleBlur} className="input input--login" placeholder="Введите новый логин" />
     }
     return (
         <div className="auth-header">
