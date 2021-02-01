@@ -1,15 +1,17 @@
-.company__address {
-    font-size: 16px;
-    margin-bottom: 5px;
-}
+.company {
+    &__address {
+        font-size: 16px;
+        margin-bottom: 5px;
+    }
 
-.company__phones {
-    font-size: 16px;
-    margin-bottom: 10px;
-}
+    &__phones {
+        font-size: 16px;
+        margin-bottom: 10px;
+    }
 
-.company__cite {
-    text-decoration: none;
-    color: #1F4766;
-    font-weight: 500;
+    &__cite {
+        text-decoration: none;
+        color: #1F4766;
+        font-weight: 500;
+    }
 }

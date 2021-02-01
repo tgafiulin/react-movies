@@ -1,8 +1,8 @@
 .header {
     margin: 30px 0 50px;
-}
 
-.header__info {
-    display: flex;
-    justify-content: space-between;
+    &__info {
+        display: flex;
+        justify-content: space-between;
+    }
 }

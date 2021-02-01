@@ -8,15 +8,19 @@
     height: 100vh;
     background: rgba(51, 51, 51, .6);
     display: none;
-}
 
-.modal-container__close {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    right: 0;
-    left: 0;
-    z-index: 1;
+    &--open {
+        display: block;
+    }
+
+    &__close {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        z-index: 1;
+    }
 }
 
 .modal {
@@ -28,8 +32,4 @@
     border-radius: 8px;
     padding: 36px;
     z-index: 2;
-}
-
-.modal-container--open {
-    display: block;
 }

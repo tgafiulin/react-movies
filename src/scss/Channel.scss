@@ -13,18 +13,18 @@
     &:last-child {
         margin-bottom: 0;
     }
-}
 
-.channel__logo {
-    margin-right: 140px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 115px;
-}
+    &__logo {
+        margin-right: 140px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 115px;
+    }
 
-.channel__name {
-    font-size: 20px;
-    font-weight: 500;
-    margin-bottom: 15px;
+    &__name {
+        font-size: 20px;
+        font-weight: 500;
+        margin-bottom: 15px;
+    }
 }

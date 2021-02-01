@@ -22,32 +22,32 @@
     &:last-child {
         margin-right: 0;
     }
-}
 
-.genre--comedy {
-    background: linear-gradient(127.83deg, #F2C94C 8.44%, #F29A4A 91.36%);
-}
+    &--comedy {
+        background: linear-gradient(127.83deg, #F2C94C 8.44%, #F29A4A 91.36%);
+    }
 
-.genre--drama {
-    background: linear-gradient(127.83deg, #F2994A 8.44%, #EB5757 91.36%);
-}
+    &--drama {
+        background: linear-gradient(127.83deg, #F2994A 8.44%, #EB5757 91.36%);
+    }
 
-.genre--fantasy {
-    background: linear-gradient(127.83deg, #56CCF2 8.44%, #2F80ED 91.36%);
-}
+    &--fantasy {
+        background: linear-gradient(127.83deg, #56CCF2 8.44%, #2F80ED 91.36%);
+    }
 
-.genre--horror {
-    background: linear-gradient(127.83deg, #828282 8.44%, #333333 91.36%);
-}
+    &--horror {
+        background: linear-gradient(127.83deg, #828282 8.44%, #333333 91.36%);
+    }
 
-.genre__logo {
-    font-size: 48px;
-    line-height: 57px;
-    display: block;
-    margin: 80px auto 30px;
-}
+    &__logo {
+        font-size: 48px;
+        line-height: 57px;
+        display: block;
+        margin: 80px auto 30px;
+    }
 
-.genre__name {
-    font-size: 20px;
-    color: #FFFFFF;
+    &__name {
+        font-size: 20px;
+        color: #FFFFFF;
+    }
 }

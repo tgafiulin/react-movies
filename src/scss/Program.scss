@@ -2,12 +2,12 @@
     display: flex;
     font-size: 16px;
     margin-bottom: 10px;
-}
 
-.program--active {
-    color: #E5261E;
-}
+    &--active {
+        color: #E5261E;
+    }
 
-.program__time {
-    margin-right: 15px;
+    &__time {
+        margin-right: 15px;
+    }
 }

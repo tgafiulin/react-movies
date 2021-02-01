@@ -1,13 +1,13 @@
 .logo {
     display: flex;
-}
 
-.logo__img {
-    margin-right: 10px;
-}
+    &__img {
+        margin-right: 10px;
+    }
 
-.logo__name {
-    line-height: 36px;
-    font-weight: 500;
-    font-size: 20px;
+    &__name {
+        line-height: 36px;
+        font-weight: 500;
+        font-size: 20px;
+    }
 }

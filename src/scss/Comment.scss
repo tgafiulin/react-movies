@@ -1,41 +1,41 @@
 .comments {
     margin-left: 190px;
-}
 
-.comments__title {
-    margin-bottom: 25px;
-}
+    &__title {
+        margin-bottom: 25px;
+    }
 
-.comments__header {
-    display: flex;
-    align-items: flex-start;
-    position: relative;
-    margin-bottom: 16px;
-}
+    &__header {
+        display: flex;
+        align-items: flex-start;
+        position: relative;
+        margin-bottom: 16px;
+    }
 
-.comments__input {
-    margin-right: 20px;
-    background: #fbdedd;
-    border-radius: 8px;
-    padding: 16px;
-    font-size: 16px;
-    line-height: 19px;
-    color: #E5261E;
-    border: none;
-    outline: none;
-    resize: none;
-    max-width: 780px;
-    width: 100%;
-    box-sizing: border-box;
-    overflow: auto;
-}
+    &__input {
+        margin-right: 20px;
+        background: #fbdedd;
+        border-radius: 8px;
+        padding: 16px;
+        font-size: 16px;
+        line-height: 19px;
+        color: #E5261E;
+        border: none;
+        outline: none;
+        resize: none;
+        max-width: 780px;
+        width: 100%;
+        box-sizing: border-box;
+        overflow: auto;
+    }
 
-.comments__label {
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    max-width: calc(100% - 800px);
-    color: rgba(0, 0, 0, .5);
+    &__label {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        max-width: calc(100% - 800px);
+        color: rgba(0, 0, 0, .5);
+    }
 }
 
 .comment {
@@ -51,9 +51,9 @@
     color: #333333;
     margin-bottom: 16px;
     position: relative;
-}
 
-.comment__login {
-    font-weight: 500;
-    margin-bottom: 10px;
+    &__login {
+        font-weight: 500;
+        margin-bottom: 10px;
+    }
 }
