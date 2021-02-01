@@ -10,7 +10,7 @@ function MovieList () {
     let filterMovies = [];
 
     if (searchValue) {
-        filterMovies = movies.filter((movie) => movie.name.indexOf(searchValue) !== -1)
+        filterMovies = movies.filter((movie) => movie.name.toLowerCase().indexOf(searchValue.toLowerCase()) !== -1)
     } 
 
     if (!filterMovies.length) {
