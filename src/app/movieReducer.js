@@ -141,7 +141,7 @@ const movieReducer = (state = defaultState, action) => {
     switch (action.type) {
         case UPDATE_COMMENT:
             let newMovies = state.movies.map((movie) => movie.id === action.payload.id ? action.payload : movie)
-            sessionStorage.setItem('movies', JSON.stringify(newMovies))
+            localStorage.setItem('movies', JSON.stringify(newMovies))
             return {...state, movies: newMovies}
         case UPDATE_SEARCH_VALUE:
             return {...state, searchValue: action.payload}
